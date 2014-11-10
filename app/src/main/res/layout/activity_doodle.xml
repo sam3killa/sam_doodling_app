@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoodleActivity">
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="animationdemo.samshih.com.doodlingapp.DoodleView"
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:src="@drawable/ic_green"
+        android:id="@+id/colorGreen"
+        android:onClick="greenButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:id="@+id/button"
+        android:layout_toEndOf="@+id/colorGreen"
+        android:layout_alignParentBottom="true"
+        android:onClick="redButton"
+        android:src="@drawable/ic_red"
+        android:layout_toRightOf="@+id/colorGreen" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yellow"
+        android:src="@drawable/ic_yellow"
+        android:id="@+id/button2"
+        android:onClick="yellowButton"
+        android:layout_toEndOf="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White"
+        android:id="@+id/button3"
+        android:onClick="whiteButton"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_white"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_blue"
+        android:text="Blue"
+        android:id="@+id/button4"
+        android:onClick="blueButton"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sm"
+        android:id="@+id/button6"
+        android:onClick="smallButton"
+        android:layout_toStartOf="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Med"
+        android:onClick="medButton"
+        android:id="@+id/button7"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="largeButton"
+        android:text="Lar"
+        android:id="@+id/button8"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button7"
+        android:layout_toEndOf="@+id/button7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearButton"
+        android:text="CLEAR"
+        android:id="@+id/button9"
+        android:layout_toEndOf="@+id/button3"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button8" />
+
+
+</RelativeLayout>
